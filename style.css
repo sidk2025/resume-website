@@ -1,76 +1,115 @@
+/* style.css */
+
 body {
-    font-family: 'Poppins', sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f5f7fa;
-    color: #333;
-    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a1f44;
+    color: #f7d774;
 }
 
 header {
-    background: royalblue;
-    color: gold;
-    text-align: center;
-    padding: 40px 20px;
+    background-color: #071633;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
 }
 
-header img {
-    border-radius: 50%;
-    margin-top: 20px;
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav a {
-    margin: 0 15px;
-    color: gold;
+nav h1 {
+    color: #f7d774;
+    font-size: 28px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
     text-decoration: none;
-    font-weight: bold;
+    color: #f7d774;
+    font-weight: 600;
+    transition: color 0.3s;
 }
 
-nav a:hover {
-    text-decoration: underline;
+nav ul li a:hover {
+    color: #ffffff;
 }
 
 section {
-    padding: 60px 20px;
-    max-width: 900px;
+    padding: 50px 20px;
+    max-width: 1000px;
     margin: auto;
 }
 
 h2 {
-    color: royalblue;
-    border-bottom: 3px solid gold;
+    border-bottom: 2px solid #f7d774;
     padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-ul {
-    list-style-type: square;
-    padding-left: 20px;
+.profile-pic {
+    width: 150px;
+    border-radius: 50%;
+    border: 4px solid #f7d774;
+    display: block;
+    margin: 20px auto;
 }
 
-img {
-    margin: 10px;
+ul li {
+    margin: 10px 0;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #102b5a;
+    padding: 20px;
+    border-radius: 12px;
+    width: calc(50% - 20px);
+    color: #fff;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
     border-radius: 10px;
 }
 
 footer {
-    background: royalblue;
-    color: gold;
+    background-color: #071633;
     text-align: center;
     padding: 15px;
+    color: #f7d774;
+    margin-top: 50px;
 }
 
-/* Cards effect for blog articles */
-article {
-    background: #fff;
-    border: 2px solid royalblue;
-    border-radius: 12px;
-    padding: 15px;
-    margin-bottom: 20px;
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+a {
+    color: #f7d774;
 }
 
-/* Fun facts emojis larger */
-#funfacts li {
-    font-size: 18px;
-    margin-bottom: 10px;
+a:hover {
+    color: #ffffff;
 }
