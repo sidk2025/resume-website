@@ -1,101 +1,76 @@
-/* Google Font */
 body {
-  font-family: 'Poppins', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f0f4f8;
-  color: #333;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+    color: #333;
+    scroll-behavior: smooth;
 }
 
-/* Navigation Bar */
-nav {
-  background-color: #2c3e50;
-  padding: 1rem;
+header {
+    background: royalblue;
+    color: gold;
+    text-align: center;
+    padding: 40px 20px;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin: 0;
-  padding: 0;
+header img {
+    border-radius: 50%;
+    margin-top: 20px;
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
+    margin: 0 15px;
+    color: gold;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 nav a:hover {
-  color: #f39c12;
+    text-decoration: underline;
 }
 
-/* Header */
-header {
-  text-align: center;
-  padding: 3rem 1rem;
-  background-color: #3498db;
-  color: white;
-}
-
-header h1 {
-  margin-bottom: 0.5rem;
-}
-
-/* Sections */
 section {
-  padding: 2rem 1rem;
-  max-width: 900px;
-  margin: auto;
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: auto;
 }
 
-/* Experience Cards */
-.card {
-  background: white;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+h2 {
+    color: royalblue;
+    border-bottom: 3px solid gold;
+    padding-bottom: 10px;
 }
 
-.card h3 {
-  margin-top: 0;
-  color: #3498db;
+ul {
+    list-style-type: square;
+    padding-left: 20px;
 }
 
-/* Skills */
-.skills-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 10px;
-  padding: 0;
-  list-style: none;
+img {
+    margin: 10px;
+    border-radius: 10px;
 }
 
-.skills-list li {
-  background-color: #3498db;
-  color: white;
-  text-align: center;
-  padding: 0.5rem;
-  border-radius: 8px;
-}
-
-/* Contact Links */
-a {
-  color: #3498db;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Footer */
 footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #2c3e50;
-  color: white;
-  margin-top: 2rem;
+    background: royalblue;
+    color: gold;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Cards effect for blog articles */
+article {
+    background: #fff;
+    border: 2px solid royalblue;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Fun facts emojis larger */
+#funfacts li {
+    font-size: 18px;
+    margin-bottom: 10px;
 }
